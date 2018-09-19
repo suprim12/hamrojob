@@ -1,0 +1,15 @@
+{
+  "name": "hamrojob",
+  "version": "1.0.0",
+  "description": "Hamro Job Static Development",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Suprim Golay",
+  "license": "MIT",
+  "homepage": "https://suprim12.github.io/hamrojob",
+  "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}
