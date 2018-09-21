@@ -1,14 +1,9 @@
 // Preloader js
-function ready(fn) {
-  if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-    setTimeout(function(){
-      fn();
-    },1000);
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
-ready(init);
+ window.onload = function(){
+   setTimeout(function(){
+    init();
+   },1000);
+};
 // Window in Load
   function init(){
       let preloaderwrapper = document.querySelector('.preloader');
@@ -97,7 +92,7 @@ $(document).ready(function(){
     delay:-0.5
   });
   t1.to('.sideoverlay',0.5,{
-    top:"0%",
+    left:"0%",
     ease:Expo.easeInOut,
     delay:-0.5
   });

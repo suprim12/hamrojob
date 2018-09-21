@@ -20,6 +20,7 @@
 @font-face {
   src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format(tff);
   font-family: 'Montserrat';
+  font-display: fallback;
 }
 
 /* COLORS */
@@ -82,11 +83,17 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 990;
+  z-index: 9999;
   width: 100%;
   padding: 1.5rem 1rem;
   -webkit-transition: padding 0.4s ease-in-out;
   transition: padding 0.4s ease-in-out;
+}
+
+.fixed-nav.open-sidebar nav#navBar {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .btn-custom-submit-success {
@@ -537,8 +544,8 @@ img {
   position: fixed;
   width: 100%;
   height: 100vh;
-  top: 100%;
-  left: 0;
+  top: 0;
+  left: 100%;
   right: 0;
   background: rgba(0, 0, 0, 0.8);
   z-index: 999;
@@ -1875,5 +1882,51 @@ img {
   height: 100%;
 }
 
+/* =============================================
+=            Responsive            =
+============================================= */
+/* desktops - higher resolution */
+/* laptops, desktops */
+/* tablets, ipads (portrait) */
+/* tablets, ipads (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .collapse-btn {
+    display: block;
+  }
+  .open-sidebar .ham-menu {
+    position: fixed;
+    top: 80px;
+    right: 30px;
+    z-index: 99999;
+  }
+}
+
+/* low resolution tablets, mobiles (landscape) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .collapse-btn {
+    display: block;
+  }
+  .open-sidebar .ham-menu {
+    position: fixed;
+    top: 80px;
+    right: 30px;
+    z-index: 99999 !important;
+  }
+}
+
+/* smartphones mobiles (portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .collapse-btn {
+    display: block;
+  }
+  .open-sidebar .ham-menu {
+    position: fixed;
+    top: 80px;
+    right: 30px;
+    z-index: 99999 !important;
+  }
+}
+
+/* =====  End of Responsive  ====== */
 /* =====  End of Pages Styles ====== */
 /*# sourceMappingURL=style.css.map */
