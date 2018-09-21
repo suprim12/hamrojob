@@ -20,6 +20,7 @@
 @font-face {
   src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format(tff);
   font-family: 'Montserrat';
+  font-display: fallback;
 }
 
 /* COLORS */
