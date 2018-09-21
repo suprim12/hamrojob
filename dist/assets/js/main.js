@@ -1,14 +1,10 @@
 // Preloader js
-function ready(fn) {
-  if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-    setTimeout(function(){
-      fn();
-    },1000);
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
-ready(init);
+ window.onload = function(){
+   setTimeout(function(){
+     console.log('After one Second');
+    init();
+   },1000);
+};
 // Window in Load
   function init(){
       let preloaderwrapper = document.querySelector('.preloader');
