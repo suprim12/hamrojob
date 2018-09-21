@@ -10,6 +10,7 @@
     <meta name="keyword" content="Hamro Job, hamro job, Hamrojob,job,Nepal,nepal">
     <!-- Bootstrap Css -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/chosen.min.css">
     <!-- Owl CSS -->
     <link rel="stylesheet" href="assets/owl/assets/owl.carousel.min.css">
     <!-- FontAwesome Css -->
@@ -137,7 +138,7 @@
                 <div class="hero-section-content">
                     <div class="container">
                         <h2>Find the right job For You</h2>
-                        <span>Right Way</span>
+                        <span class="subtitle">Right Way</span>
                         <form action="" method="POST">
                             <div class="row no-gutters">
                                 <div class="col-lg-3 col-3">
@@ -151,7 +152,8 @@
                                     <div class="form-group search-select">
                                         <div class="form-group">
                                             <label for="">Job Categories</label>
-                                            <select class="custom-select border-left-form border-right-form" name="" id="">
+                                            <select class="custom-select border-left-form border-right-form chosen"
+                                                name="" id="">
                                                 <option value="" selected>Select Categories</option>
                                                 <option value="">PHP</option>
                                                 <option value="">Data Entry</option>
@@ -165,7 +167,7 @@
                                     <div class="form-group">
                                         <div class="form-group search-select">
                                             <label for="">Location</label>
-                                            <select class="custom-select border-left-form border-right-form"
+                                            <select class="custom-select border-left-form border-right-form chosen"
                                                 placeholder="Select" name="" id="">
                                                 <option value="" selected>Location For You</option>
                                                 <option value="">Kathmandu</option>
@@ -921,6 +923,10 @@
                 }
             }
         });
+    </script>
+    <script src="assets/bootstrap/chosen.jquery.min.js"></script>
+    <script>
+        $('.chosen').chosen();
     </script>
     <script src="assets/js/main.js"></script>
 </body>

@@ -14,7 +14,7 @@
 /*=============================================
 =            1. Global Styles            =
 =============================================*/
-@import 'global';
+@import "global";
 
 /*=====  End of 1. Global Styles  ======*/
 /*=============================================
@@ -156,7 +156,7 @@
 /*=============================================
 =            3. Header and Footer Styles       =
 =============================================*/
-@import 'layout';
+@import "layout";
 /*=====  End of 3. Header and Footer Styles  ======*/
 
 /*=============================================
@@ -176,7 +176,7 @@
             height: 80vh;
 
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -209,12 +209,27 @@
                 text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
             }
 
-            & span {
+            & span.subtitle {
                 display: block;
                 color: $link;
                 font-weight: 800;
                 font-size: 2rem;
                 margin-bottom: 4rem;
+            }
+
+            .chosen-single {
+                padding-left: 2rem !important;
+                background: #fff;
+                border-radius: 0;
+                border: none;
+                height: calc(2.25rem + 2px);
+                padding: .375rem .75rem;
+                font-size: 0.875rem;
+                box-shadow: none;
+
+                div {
+                    display: none;
+                }
             }
 
             & label {
@@ -238,7 +253,6 @@
                     font-weight: 600;
                     opacity: 0.8;
                 }
-
 
                 & input {
                     box-shadow: none;
@@ -281,7 +295,6 @@
                     }
                 }
             }
-
         }
     }
 }
@@ -404,6 +417,7 @@
 
             & .card-position {
                 font-size: 1rem;
+
                 font-weight: 600;
                 letter-spacing: 0.09375rem;
                 margin-bottom: 0.5rem;
@@ -500,6 +514,7 @@
 
         &::after {
             content: "";
+
             position: absolute;
             top: 0;
             left: 0;
@@ -624,10 +639,9 @@
 }
 
 /* =====  End of 5.3 Recommend Section  ====== */
-
-/*=============================================
+/* =============================================
 =            5.4 FormBlog Section            =
-=============================================*/
+============================================= */
 .fromblog-section {
     .card-wrapper {
         display: block;
@@ -646,16 +660,16 @@
         }
     }
 
-
     .card-img-overlay {
         position: absolute;
         bottom: 0 !important;
         top: 0;
         z-index: 2;
+
         padding: 0;
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -673,11 +687,10 @@
     }
 }
 
-/*=====  End of 5.4 FormBlog Section  ======*/
-
-/*=============================================
+/* =====  End of 5.4 FormBlog Section  ====== */
+/* =============================================
 =            5.5 Testimonial Section            =
-=============================================*/
+============================================= */
 .testi-section {
     display: block;
     margin: 4rem 0;
@@ -692,6 +705,7 @@
 
         .card-header-custom a {
             display: flex;
+
             align-items: center;
             justify-content: space-between;
 
@@ -743,16 +757,11 @@
     }
 }
 
-/*=====  End of 5.5 Testimonial Section  ======*/
-
-
-
-/*=============================================
+/* =====  End of 5.5 Testimonial Section  ====== */
+/* =============================================
 =            Pages Styles           =
-=============================================*/
-
-@import 'page-blog_list';
-@import 'page-about';
-@import 'page-contact';
-
-/*=====  End of Pages Styles ======*/
+============================================= */
+@import "page-blog_list";
+@import "page-about";
+@import "page-contact";
+/* =====  End of Pages Styles ====== */
