@@ -9,6 +9,9 @@
   5.0 Hero Section
  *. Page Styles 
   *.0 Page_blog
+  *.0 Page_about
+  *.0 Page_contact
+  *.0 Page_job
 =============================================*/
 /*=============================================
 =            1. Global Styles            =
@@ -316,6 +319,10 @@ img {
 
 .cat-4 {
   background: #009cff;
+}
+
+#owl-one .owl-stage-outer {
+  padding: 1rem 0;
 }
 
 /*=====  End of 0.1 Global Styles  ======*/
@@ -1928,5 +1935,57 @@ img {
 }
 
 /* =====  End of Responsive  ====== */
+/*=============================================
+=           Page - Job Section            =
+=============================================*/
+.job-section {
+  padding: 4rem;
+  background: #f2f2f2;
+}
+
+.job-section .job-left-bar {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.job-section .job-left-bar .job-left-item h2 {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 0.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.job-section .job-left-bar .job-left-item h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  height: 2px;
+  background: #1abc9c;
+}
+
+.job-section .job-left-bar .job-left-item ul li {
+  padding: 0.25rem 0.5rem;
+}
+
+.job-section .job-left-bar .job-left-item ul li a {
+  color: #2c3e50;
+  opacity: 0.5;
+  font-weight: 500;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.job-section .job-left-bar .job-left-item ul li a:hover, .job-section .job-left-bar .job-left-item ul li a:focus {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+/*=====  End of Job Section  ======*/
 /* =====  End of Pages Styles ====== */
 /*# sourceMappingURL=style.css.map */
