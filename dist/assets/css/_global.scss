@@ -6,7 +6,7 @@
 @font-face {
     src: url(../fonts/Montserrat/Montserrat-Regular.ttf) format(tff);
     font-family: 'Montserrat';
-    font-display: fallback;     
+    font-display: fallback;
 }
 
 /* COLORS */
@@ -82,10 +82,15 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 990;
+    z-index: 9999;
     width: 100%;
     padding: 1.5rem 1rem;
     transition: padding 0.4s ease-in-out;
+}
+
+.fixed-nav.open-sidebar nav#navBar {
+    background: transparent;
+    box-shadow: none;
 }
 
 .btn-custom-submit-success {

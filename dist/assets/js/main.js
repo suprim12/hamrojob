@@ -1,7 +1,6 @@
 // Preloader js
  window.onload = function(){
    setTimeout(function(){
-     console.log('After one Second');
     init();
    },1000);
 };
@@ -93,7 +92,7 @@ $(document).ready(function(){
     delay:-0.5
   });
   t1.to('.sideoverlay',0.5,{
-    top:"0%",
+    left:"0%",
     ease:Expo.easeInOut,
     delay:-0.5
   });
