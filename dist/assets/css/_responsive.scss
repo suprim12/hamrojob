@@ -3,6 +3,13 @@
 ============================================= */
 @mixin responsive-border-right {
     .responsive-border-right {
+        .chosen-container {
+            .chosen-single {
+                border-top-right-radius: .25rem !important;
+                border-bottom-right-radius: .25rem !important;
+            }
+        }
+
         border-top-right-radius: .25rem !important;
         border-bottom-right-radius: .25rem !important;
     }

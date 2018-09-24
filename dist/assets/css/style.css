@@ -52,6 +52,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
+  font-size: 16px;
 }
 
 h1,
@@ -1915,6 +1916,10 @@ img {
     border-top-right-radius: .25rem !important;
     border-bottom-right-radius: .25rem !important;
   }
+  .responsive-border-right .chosen-container .chosen-single {
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+  }
   .responsive-border-left {
     border-top-left-radius: .25rem !important;
     border-bottom-left-radius: .25rem !important;
@@ -1940,6 +1945,10 @@ img {
     border-top-right-radius: .25rem !important;
     border-bottom-right-radius: .25rem !important;
   }
+  .responsive-border-right .chosen-container .chosen-single {
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+  }
   .responsive-border-left {
     border-top-left-radius: .25rem !important;
     border-bottom-left-radius: .25rem !important;
@@ -1962,6 +1971,10 @@ img {
     z-index: 99999 !important;
   }
   .responsive-border-right {
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+  }
+  .responsive-border-right .chosen-container .chosen-single {
     border-top-right-radius: .25rem !important;
     border-bottom-right-radius: .25rem !important;
   }
