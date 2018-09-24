@@ -9,6 +9,9 @@
   5.0 Hero Section
  *. Page Styles 
   *.0 Page_blog
+  *.0 Page_about
+  *.0 Page_contact
+  *.0 Page_job
 =============================================*/
 
 /*=============================================
@@ -765,4 +768,5 @@
 @import "page-about";
 @import "page-contact";
 @import 'responsive';
+@import 'page-job';
 /* =====  End of Pages Styles ====== */

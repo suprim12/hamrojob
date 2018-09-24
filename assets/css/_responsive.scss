@@ -1,6 +1,20 @@
 /* =============================================
 =            Responsive            =
 ============================================= */
+@mixin responsive-border-right {
+    .responsive-border-right {
+        border-top-right-radius: .25rem !important;
+        border-bottom-right-radius: .25rem !important;
+    }
+}
+
+@mixin responsive-border-left {
+    .responsive-border-left {
+        border-top-left-radius: .25rem !important;
+        border-bottom-left-radius: .25rem !important;
+    }
+}
+
 /* desktops - higher resolution */
 @media (min-width: 1281px) {}
 
@@ -22,10 +36,20 @@
         right: 30px;
         z-index: 99999;
     }
+
+    @include responsive-border-right;
+    @include responsive-border-left;
+
 }
 
 /* low resolution tablets, mobiles (landscape) */
 @media (min-width: 481px) and (max-width: 767px) {
+
+    body,
+    html {
+        font-size: 14px;
+    }
+
     .collapse-btn {
         display: block;
     }
@@ -36,10 +60,21 @@
         right: 30px;
         z-index: 99999 !important;
     }
+
+    @include responsive-border-right;
+    @include responsive-border-left;
+
+
 }
 
 /* smartphones mobiles (portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
+
+    body,
+    html {
+        font-size: 14px;
+    }
+
     .collapse-btn {
         display: block;
     }
@@ -51,7 +86,8 @@
         z-index: 99999 !important;
     }
 
-
+    @include responsive-border-right;
+    @include responsive-border-left;
 }
 
 /* =====  End of Responsive  ====== */
